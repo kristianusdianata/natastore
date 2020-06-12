@@ -1,0 +1,1020 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- font family  -->
+    <link href="https://fonts.googleapis.com/css?family=Lora:700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- awesome font -->
+    <link href="css/all.css" rel="stylesheet">
+
+    <!-- costume css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Nata Store</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="position-fixed" id="top-navbar">
+        <div id="navbar-header" class="d-flex align-items-center justify-content-center">
+            <a href="#" class="ml-3 mr-3">
+                <i class="fab fa-facebook-f text-white fa-sm"></i>
+            </a>
+            <a href="#" class="ml-3 mr-3">
+                <i class="fab fa-twitter text-white fa-sm"></i>
+            </a>
+            <a href="#" class="ml-3 mr-3">
+                <i class="fab fa-instagram text-white fa-sm"></i>
+            </a>
+        </div>
+
+        <!-- mobile navbar -->
+        <div class="position-relative hidden-lg" style="background-color: #ffffff;">
+            <div class="container">
+                <div class="row m-0 align-items-center" id="navbar-mobile">
+                    <!-- menu -->
+                    <div class="col-4 p-0" id="menu-navbar">
+                        <i class="fas fa-bars fa-sm text-secondary"></i>
+                    </div>
+
+                    <!-- navbar menu -->
+                    <div class="position-fixed" id="layer-content-navbar"></div>
+                    <div class="tab-content position-fixed" id="navbar-mobile-content">
+                        <div id="account-user">
+                            <div id="account-user-header" class="bg-light d-flex align-items-center pr-3 pl-3">
+                                <!-- show this if user is not login -->
+                                <p class="m-0">ACCOUNT</p>
+
+                                <!-- show this if user is login -->
+                                <p class="m-0 d-none">Kristianus Dianata</p>
+                            </div>
+
+                            <div id="account-user-body">
+                                <div class="row m-0">
+                                    <!-- show this if user login -->
+                                    <a href="#"
+                                        class="list-group-item list-group-item-action col-6 p-0 d-flex align-items-center justify-content-center border pr-2 pl-2">
+                                        WHISTLIST
+                                        <!-- hidden this badge if no whistlist -->
+                                        <span class="badge badge-danger badge-pill ml-2"
+                                            style="font-size: 100%;">14</span>
+                                    </a>
+
+                                    <!-- show this if user login -->
+                                    <a href="#"
+                                        class="col-6 p-0 border d-flex align-items-center justify-content-center pr-2 pl-2">
+                                        HISTORI TRANSAKSI
+                                    </a>
+
+                                    <!-- show this if user not login -->
+                                    <a href="#"
+                                        class="col-6 p-0 border d-flex align-items-center justify-content-center pr-2 pl-2">
+                                        LOGIN
+                                    </a>
+
+                                    <!-- show this if user not login -->
+                                    <a href="#"
+                                        class="col-6 p-0 border d-flex align-items-center justify-content-center pr-2 pl-2">
+                                        REGISTER
+                                    </a>
+
+                                    <!-- show this if user login -->
+                                    <a href="#"
+                                        class="col-6 p-0 border d-flex align-items-center justify-content-center pr-2 pl-2">
+                                        LOGOUT
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="shop-navbar">
+                            <div id="shop-navbar-header" class="d-flex align-items-center pr-3 pl-3">
+                                <p class="m-0 text-white">SHOP</p>
+                            </div>
+
+                            <div id="shop-navbar-body">
+                                <div class="row m-0">
+                                    <div class="col-12 p-0">
+                                        <div class="row m-0 border-bottom border-dark">
+                                            <a
+                                                class="col-12 p-0 border d-flex align-items-center pr-3 pl-3 position-relative category-dropdown">
+                                                BRAND
+
+                                                <span class="position-absolute mr-3 text-secondary" style="right: 0px;">
+                                                    <i class="fas fa-plus"></i>
+                                                </span>
+
+                                                <span class="position-absolute mr-3 text-secondary d-none"
+                                                    style="right: 0px;">
+                                                    <i class="fas fa-minus"></i>
+                                                </span>
+                                            </a>
+
+                                            <div class="col-12 p-0 category-list-mobile">
+                                                <div class="row m-0">
+                                                    <!-- show max 10 list -->
+                                                    <a href="brand.html"
+                                                        class="col-12 pr-4 pl-4 d-flex align-items-center text-decoration-none"
+                                                        style="background-color: #ffffff; min-height: 40px;">
+                                                        SEMUA BRANDS
+                                                    </a>
+
+                                                    <a href="brand_sale.html"
+                                                        class="col-12 pr-4 pl-4 d-flex align-items-center text-decoration-none"
+                                                        style="background-color: #ffffff; min-height: 40px;">
+                                                        UNIQLO
+                                                    </a>
+
+                                                    <a href="brand_sale.html"
+                                                        class="col-12 pr-4 pl-4 d-flex align-items-center text-decoration-none"
+                                                        style="background-color: #ffffff; min-height: 40px;">
+                                                        NIKE
+                                                    </a>
+
+                                                    <a href="brand_sale.html"
+                                                        class="col-12 pr-4 pl-4 d-flex align-items-center text-decoration-none"
+                                                        style="background-color: #ffffff; min-height: 40px;">
+                                                        PULL&BEAR
+                                                    </a>
+
+                                                    <a href="brand_sale.html"
+                                                        class="col-12 pr-4 pl-4 d-flex align-items-center text-decoration-none"
+                                                        style="background-color: #ffffff; min-height: 40px;">
+                                                        CHANEL
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row m-0 border-bottom border-dark">
+                                            <a
+                                                class="col-12 p-0 border d-flex align-items-center pr-3 pl-3 position-relative category-dropdown">
+                                                PAKAIAN
+
+                                                <span class="position-absolute mr-3 text-secondary" style="right: 0px;">
+                                                    <i class="fas fa-plus"></i>
+                                                </span>
+
+                                                <span class="position-absolute mr-3 text-secondary d-none"
+                                                    style="right: 0px;">
+                                                    <i class="fas fa-minus"></i>
+                                                </span>
+                                            </a>
+
+                                            <div class="col-12 p-0 category-list-mobile">
+                                                <div class="row m-0">
+                                                    <a href="category_sale.html"
+                                                        class="col-12 pr-4 pl-4 d-flex align-items-center text-decoration-none"
+                                                        style="background-color: #ffffff; min-height: 40px;">
+                                                        SEMUA PAKAIAN
+                                                    </a>
+
+                                                    <a href="#"
+                                                        class="col-12 pr-4 pl-4 d-flex align-items-center text-decoration-none"
+                                                        style="background-color: #ffffff; min-height: 40px;">
+                                                        KAOS
+                                                    </a>
+
+                                                    <a href="#"
+                                                        class="col-12 pr-4 pl-4 d-flex align-items-center text-decoration-none"
+                                                        style="background-color: #ffffff; min-height: 40px;">
+                                                        KEMEJA
+                                                    </a>
+
+                                                    <a href="#"
+                                                        class="col-12 pr-4 pl-4 d-flex align-items-center text-decoration-none"
+                                                        style="background-color: #ffffff; min-height: 40px;">
+                                                        BLOUSE
+                                                    </a>
+
+                                                    <a href="#"
+                                                        class="col-12 pr-4 pl-4 d-flex align-items-center text-decoration-none"
+                                                        style="background-color: #ffffff; min-height: 40px;">
+                                                        POLO SHIRT
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row m-0 border-bottom border-dark">
+                                            <a
+                                                class="col-12 p-0 border d-flex align-items-center pr-3 pl-3 position-relative category-dropdown">
+                                                CELANA
+
+                                                <span class="position-absolute mr-3 text-secondary" style="right: 0px;">
+                                                    <i class="fas fa-plus"></i>
+                                                </span>
+
+                                                <span class="position-absolute mr-3 text-secondary d-none"
+                                                    style="right: 0px;">
+                                                    <i class="fas fa-minus"></i>
+                                                </span>
+                                            </a>
+
+                                            <div class="col-12 p-0 category-list-mobile">
+                                                <div class="row m-0">
+                                                    <a href="category_sale.html"
+                                                        class="col-12 pr-4 pl-4 d-flex align-items-center text-decoration-none"
+                                                        style="background-color: #ffffff; min-height: 40px;">
+                                                        SEMUA CELANA
+                                                    </a>
+
+                                                    <a href="#"
+                                                        class="col-12 pr-4 pl-4 d-flex align-items-center text-decoration-none"
+                                                        style="background-color: #ffffff; min-height: 40px;">
+                                                        CELANA JEANS
+                                                    </a>
+
+                                                    <a href="#"
+                                                        class="col-12 pr-4 pl-4 d-flex align-items-center text-decoration-none"
+                                                        style="background-color: #ffffff; min-height: 40px;">
+                                                        CELANA PANJANG
+                                                    </a>
+
+                                                    <a href="#"
+                                                        class="col-12 pr-4 pl-4 d-flex align-items-center text-decoration-none"
+                                                        style="background-color: #ffffff; min-height: 40px;">
+                                                        CELANA PENDEK
+                                                    </a>
+
+                                                    <a href="#"
+                                                        class="col-12 pr-4 pl-4 d-flex align-items-center text-decoration-none"
+                                                        style="background-color: #ffffff; min-height: 40px;">
+                                                        ROK
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row m-0 border-bottom border-dark">
+                                            <a
+                                                class="col-12 p-0 border d-flex align-items-center pr-3 pl-3 position-relative category-dropdown">
+                                                JAKET
+
+                                                <span class="position-absolute mr-3 text-secondary" style="right: 0px;">
+                                                    <i class="fas fa-plus"></i>
+                                                </span>
+
+                                                <span class="position-absolute mr-3 text-secondary d-none"
+                                                    style="right: 0px;">
+                                                    <i class="fas fa-minus"></i>
+                                                </span>
+                                            </a>
+
+                                            <div class="col-12 p-0 category-list-mobile">
+                                                <div class="row m-0">
+                                                    <a href="category_sale.html"
+                                                        class="col-12 pr-4 pl-4 d-flex align-items-center text-decoration-none"
+                                                        style="background-color: #ffffff; min-height: 40px;">
+                                                        SEMUA JAKET
+                                                    </a>
+
+                                                    <a href="#"
+                                                        class="col-12 pr-4 pl-4 d-flex align-items-center text-decoration-none"
+                                                        style="background-color: #ffffff; min-height: 40px;">
+                                                        JAS
+                                                    </a>
+
+                                                    <a href="#"
+                                                        class="col-12 pr-4 pl-4 d-flex align-items-center text-decoration-none"
+                                                        style="background-color: #ffffff; min-height: 40px;">
+                                                        SWEATER
+                                                    </a>
+
+                                                    <a href="#"
+                                                        class="col-12 pr-4 pl-4 d-flex align-items-center text-decoration-none"
+                                                        style="background-color: #ffffff; min-height: 40px;">
+                                                        JAKET KULIT
+                                                    </a>
+
+                                                    <a href="#"
+                                                        class="col-12 pr-4 pl-4 d-flex align-items-center text-decoration-none"
+                                                        style="background-color: #ffffff; min-height: 40px;">
+                                                        JAKET JEANS
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row m-0 border-bottom">
+                                            <a href="sale.html"
+                                                class="col-12 border d-flex align-items-center pr-3 pl-3 text-decoration-none text-danger"
+                                                style="background-color: #ffffff;">
+                                                SALE
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="menu-mobile">
+                            <div id="menu-mobile-header" class="d-flex align-items-center pr-3 pl-3">
+                                <p class="m-0  text-white">MENU</p>
+                            </div>
+
+                            <div id="menu-mobile-body">
+                                <div class="row m-0">
+                                    <a href="#"
+                                        class="col-12 p-0 border d-flex align-items-center pr-3 pl-3 text-decoration-none"
+                                        style="background-color: #ffffff;">
+                                        BLOG
+                                    </a>
+
+                                    <a href="#"
+                                        class="col-12 p-0 border d-flex align-items-center pr-3 pl-3 text-decoration-none"
+                                        style="background-color: #ffffff;">
+                                        CARA BELANJA
+                                    </a>
+
+                                    <a href="#"
+                                        class="col-12 p-0 border d-flex align-items-center pr-3 pl-3 text-decoration-none"
+                                        style="background-color: #ffffff;">
+                                        CONTACT US
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- watermark -->
+                    <a href="index.html" class="watermark col-4 text-center p-0 m-0 text-decoration-none">
+                        NATA STORE
+                    </a>
+
+                    <!-- extra menu -->
+                    <div class="col-4 p-0">
+                        <div class="row m-0 justify-content-end">
+                            <div class="col-3 col-md-2 p-0 text-right" id="search-menu">
+                                <i class="fas fa-search fa-sm text-secondary"></i>
+                            </div>
+                            <a class="col-3 col-md-2 p-0 text-right position-relative" id="cart-menu">
+                                <i class="fas fa-shopping-cart fa-sm text-secondary"></i>
+                                <span class="rounded-circle position-absolute"></span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- search field -->
+                    <div class="col-12 position-absolute" id="search-field-navbar">
+                        <div class="row justify-content-center align-items-center h-100">
+                            <div class="col-9 p-0">
+                                <div class="input-group input-group-sm">
+                                    <div class="input-group-prepend mr-2">
+                                        <i class="fas fa-search fa-lg text-secondary h-100 pl-2"></i>
+                                    </div>
+                                    <input type="text"
+                                        class="form-control border-secondary border-bottom border-top-0 border-right-0 border-left-0"
+                                        aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"
+                                        placeholder="Search Product Here . . .">
+                                </div>
+                            </div>
+                            <a class="col-1 p-0 text-right p-0" id="close-search">
+                                <i class="fas fa-times fa-lg text-secondary"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- desktop navbar -->
+        <div class="position-relative hidden-xs hidden-md" style="background-color: #ffffff;">
+            <div class="container">
+                <div id="nav-content-1">
+                    <div class="row m-0 pl-3 pr-3 pt-4 pb-4">
+                        <div class="col-lg-3 text-center m-auto">
+                            <a href="index.html" class="watermark col-4 text-center p-0 m-0 text-decoration-none">
+                                NATA STORE
+                            </a>
+                        </div>
+
+                        <div class="col-lg-6 border rounded border-secondary">
+                            <div class="input-group" id="field-search-navbar">
+                                <input type="text" class="form-control border-0 text-secondary"
+                                    placeholder="Search Product Here . . .">
+                                <i class="fas fa-search align-self-center text-secondary"></i>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 text-center m-auto" id="menu-navbar-desktop">
+                            <!-- show this if user not login -->
+                            <a href="#" class="text-decoration-none pr-3 text-secondary" id="link-login">LOGIN</a>
+
+                            <!-- show this if user is login -->
+                            <div class="dropdown d-inline pr-3 hidden-lg" id="user-menu-nav">
+                                <button class="btn btn-secondary dropdown-toggle text-secondary border-0" type="button"
+                                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <!-- show max 10 char with UPPER CHAR-->
+                                    USER
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item text-secondary" href="#">
+                                        WHISTLIST
+                                        <!-- show this if whistlist > 0 -->
+                                        <span class="badge badge-danger ml-3"
+                                            style="font-size: 9px; font-weight: 500;">4</span>
+                                    </a>
+                                    <a class="dropdown-item text-secondary" href="#">HISTORY TRANSAKSI</a>
+                                    <a class="dropdown-item text-secondary" href="#">LOGOUT</a>
+                                </div>
+                            </div>
+
+                            <a href="#" class="text-right position-relative" id="cart-menu">
+                                <i class="fas fa-shopping-cart fa-sm text-secondary"></i>
+                                <span class="rounded-circle position-absolute"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="nav-content-2">
+                    <ul class="mb-0 pb-2 pr-3 pl-3 pt-0 text-center position-relative border-bottom border-secondary">
+                        <li class="d-inline">
+                            <a href="newarrival_sale.html" class="text-decoration-none p-2">NEW ARRIVALS</a>
+                        </li>
+                        <li class="d-inline">
+                            <a href="brand.html" class="text-decoration-none p-2" data-target="#brand-sub-nav"
+                                id="brand-nav">BRANDS</a>
+                            <div class="position-absolute sub-nav" id="brand-sub-nav">
+                                <ul class="mb-0 p-2 text-center">
+                                    <li class="d-inline p-2">
+                                        <a href="brand.html" class="text-decoration-none">ALL BRANDS</a>
+                                    </li>
+                                    <li class="d-inline p-2">
+                                        <a href="brand_sale.html" class="text-decoration-none">UNIQLO</a>
+                                    </li>
+                                    <li class="d-inline p-2">
+                                        <a href="brand_sale.html" class="text-decoration-none">NIKE</a>
+                                    </li>
+                                    <li class="d-inline p-2">
+                                        <a href="brand_sale.html" class="text-decoration-none">PULL&BEAR</a>
+                                    </li>
+                                    <li class="d-inline p-2">
+                                        <a href="brand_sale.html" class="text-decoration-none">CHANEL</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="d-inline">
+                            <a href="category_sale.html" class="text-decoration-none p-2" data-target="#pakaian-sub-nav"
+                                id="pakaian-nav">PAKAIAN</a>
+                            <div class="position-absolute sub-nav" id="pakaian-sub-nav">
+                                <ul class="mb-0 p-2 text-center">
+                                    <li class="d-inline p-2">
+                                        <a href="category_sale.html" class="text-decoration-none">ALL PAKAIAN</a>
+                                    </li>
+                                    <li class="d-inline p-2">
+                                        <a href="category_sale.html" class="text-decoration-none">KAOS</a>
+                                    </li>
+                                    <li class="d-inline p-2">
+                                        <a href="category_sale.html" class="text-decoration-none">KEMEJA</a>
+                                    </li>
+                                    <li class="d-inline p-2">
+                                        <a href="category_sale.html" class="text-decoration-none">BLOUSE</a>
+                                    </li>
+                                    <li class="d-inline p-2">
+                                        <a href="category_sale.html" class="text-decoration-none">POLO SHIRT</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="d-inline">
+                            <a href="category_sale.html" class="text-decoration-none p-2" data-target="#celana-sub-nav"
+                                id="celana-nav">CELANA</a>
+                            <div class="position-absolute sub-nav" id="celana-sub-nav">
+                                <ul class="mb-0 p-2 text-center">
+                                    <li class="d-inline p-2">
+                                        <a href="category_sale.html" class="text-decoration-none">ALL CELANA</a>
+                                    </li>
+                                    <li class="d-inline p-2">
+                                        <a href="category_sale.html" class="text-decoration-none">CELANA JEANS</a>
+                                    </li>
+                                    <li class="d-inline p-2">
+                                        <a href="category_sale.html" class="text-decoration-none">CELANA PANJANG</a>
+                                    </li>
+                                    <li class="d-inline p-2">
+                                        <a href="category_sale.html" class="text-decoration-none">CELANA PENDEK</a>
+                                    </li>
+                                    <li class="d-inline p-2">
+                                        <a href="category_sale.html" class="text-decoration-none">ROK</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="d-inline">
+                            <a href="category_sale.html" class="text-decoration-none p-2" data-target="#jaket-sub-nav"
+                                id="jaket-nav">JAKET</a>
+                            <div class="position-absolute sub-nav" id="jaket-sub-nav">
+                                <ul class="mb-0 p-2 text-center">
+                                    <li class="d-inline p-2">
+                                        <a href="category_sale.html" class="text-decoration-none">ALL JAKET</a>
+                                    </li>
+                                    <li class="d-inline p-2">
+                                        <a href="category_sale.html" class="text-decoration-none">JAS</a>
+                                    </li>
+                                    <li class="d-inline p-2">
+                                        <a href="category_sale.html" class="text-decoration-none">SWEATER</a>
+                                    </li>
+                                    <li class="d-inline p-2">
+                                        <a href="category_sale.html" class="text-decoration-none">JAKET KULIT</a>
+                                    </li>
+                                    <li class="d-inline p-2">
+                                        <a href="category_sale.html" class="text-decoration-none">JAKET JEANS</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="d-inline">
+                            <a href="#" class="text-decoration-none  p-2 text-danger">SALE</a>
+                        </li>
+                        <li class="d-inline">
+                            <a href="#" class="text-decoration-none p-2">BLOG</a>
+                        </li>
+                        <li class="d-inline">
+                            <a href="#" class="text-decoration-none p-2">CARA BELANJA</a>
+                        </li>
+                        <li class="d-inline">
+                            <a href="#" class="text-decoration-none p-2">CONTACT US</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end here -->
+
+    <!-- content -->
+    <div class="container" id="single-content">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb border-bottom">
+                <li class="breadcrumb-item">
+                    <a href="#">Sale</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Lorem Ipsum</li>
+            </ol>
+        </nav>
+
+        <div class="row m-0 pb-5 justify-content-md-around" id="detail-product">
+            <!-- product preview -->
+            <div class="col-12 col-md-8 col-lg-6 p-0">
+                <div class="row m-0 justify-content-lg-center">
+                    <!-- carousel -->
+                    <div class="col-12 col-lg-8 p-0">
+                        <div class="container" id="carousel-single">
+                            <div id="carousel-single-product" class="carousel slide" data-ride="carousel" data-interval="false">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" data-target="#prev-img-1">
+                                        <div class="row m-0">
+                                            <span class="col-12 p-0 zoom">
+                                                <img src="assets/img/promo2.jpg" class="img-fluid" alt="detail 1">
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item" data-target="#prev-img-2">
+                                        <div class="row m-0">
+                                            <span class="col-12 p-0 zoom">
+                                                <img src="assets/img/promo21.jpg" class="img-fluid" alt="detail 2">
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item" data-target="#prev-img-3">
+                                        <div class="row m-0">
+                                            <span class="col-12 p-0 zoom">
+                                                <img src="assets/img/product3.jpg" class="img-fluid" alt="detail 3">
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carousel-single-product" role="button" data-slide="prev">
+                                    <i class="fas fa-angle-left text-secondary fa-2x"></i>
+                                </a>
+                                <a class="carousel-control-next" href="#carousel-single-product" role="button" data-slide="next">
+                                    <i class="fas fa-angle-right text-secondary fa-2x"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end here -->
+
+                    <!-- preview -->
+                    <div class="col-12 col-lg-8 p-0 pt-2" id="preview-product">
+                        <div class="row m-0 justify-content-center" style="background-color: #f2f2f2">
+                            <div class="col-2 p-1">
+                                <div class="preview-img-product position-relative active" id="prev-img-1">
+                                    <span class="position-absolute"></span>
+                                    <img src="assets/img/promo2.jpg" class="img-fluid" alt="preview 1">
+                                </div>
+                            </div>
+
+                            <div class="col-2 p-1">
+                                <div class="preview-img-product position-relative" id="prev-img-2">
+                                    <span class="position-absolute"></span>
+                                    <img src="assets/img/promo21.jpg" class="img-fluid" alt="preview 2">
+                                </div>
+                            </div>
+
+                            <div class="col-2 p-1">
+                                <div class="preview-img-product position-relative" id="prev-img-3">
+                                    <span class="position-absolute"></span>
+                                    <img src="assets/img/product3.jpg" class="img-fluid" alt="preview 3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end here -->
+
+            <!-- product shop -->
+            <div class="col-12 col-lg-6 p-0">
+                <div class="row m-0">
+                    <div class="col-12 p-0">
+                        <!-- product price -->
+                        <div class="pt-3 pb-3" id="info-price">
+                            <div class="row m-0">
+                                <!-- product -->
+                                <p class="m-0 col-12 pr-3 pl-3" id="product-brand">
+                                    UNIQLO
+                                </p>
+                                <p class="m-0 col-12 pr-3 pl-3" id="product-name">
+                                    Lorem Ipsum
+                                </p>
+
+                                <!-- price -->
+                                <div class="col-12 p-0 mt-3" id="product-price-detail">
+                                    <div class="row m-0">
+                                        <!-- use this if product not discont -->
+                                        <p class="col-12 m-0 pr-3 pl-3 d-none" id="price-product">
+                                            IDR 350.000
+                                        </p>
+
+                                        <!-- show this if product is discont -->
+                                        <div class="col-12 p-0">
+                                            <div class="row m-0 pr-3 pl-3">
+                                                <div class="col-12 p-0 m-0" id="detail-discont">
+                                                    <!-- defult price -->
+                                                    <p class="m-0">IDR 350.000</p>
+                                                    <!-- after dicont price -->
+                                                    <p class="m-0 d-inline">IDR 280.000</p>
+                                                    <!-- discont tag -->
+                                                    <p class="m-0 d-inline discont-tag rounded-pill">20%</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- order qty -->
+                                <div class="col-12 p-0 mt-4" id="product-qty">
+                                    <div class="row m-0">
+                                        <div class="form-group col-6 col-md-4 p-1">
+                                            <label for="dropdown-size-product">Size</label>
+                                            <select class="form-control" id="dropdown-size-product">
+                                                <option>Pilih Ukuran</option>
+                                                <option>M</option>
+                                                <option>L</option>
+                                                <option>XL</option>
+                                                <option>XXL</option>
+                                            </select>
+                                        </div>
+
+                                        <!-- show this if stock is available -->
+                                        <div class="form-group col-6 col-md-4 p-1">
+                                            <label for="dropdown-qty-product">Qty</label>
+                                            <select class="form-control" id="dropdown-qty-product">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                            </select>
+                                        </div>
+
+                                        <!-- show this if stock is null -->
+                                        <div class="form-group col-6 col-md-4 p-1 d-none">
+                                            <label>Qty</label>
+                                            <p class="m-0 text-danger">Stok Kosong</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end here -->
+
+                                <!-- CTA -->
+                                <div class="col-12 col-md-6 p-0 pl-md-2 pr-md-2">
+                                    <div class="row m-0 justify-content-center">
+                                        <a href="#" class="text-decoration-none mt-3 rounded col-12  text-center" id="cta-order-product">
+                                            <i class="fas fa-shopping-cart text-white mr-2"></i>
+                                            ADD TO CART
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-md-6 p-0 pl-md-2 pr-md-2">
+                                    <div class="row m-0 justify-content-center">
+                                        <a href="#" class="text-decoration-none mt-2 mt-md-3 rounded col-12 text-center" id="cta-wishlist-product">
+                                            <i class="far fa-heart mr-2 text-secondary"></i>
+                                            ADD TO WHISTLIST
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- end here -->
+                            </div>
+                        </div>
+
+                        <!-- info product -->
+                        <div class="accordion mt-3" id="accordionSingle">
+                            <div class="card">
+                                <div class="card-header border-0 pr-0 pl-0" id="headingOne" style="background-color: #ffffff;">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left border-0 text-decoration-none position-relative" type="button" data-toggle="collapse"
+                                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <span class="position-absolute mr-3 d-none" style="right: 0px;">
+                                                <i class="fas fa-caret-up"></i>
+                                            </span>
+                                            <span class="position-absolute mr-3" style="right: 0px;">
+                                                <i class="fas fa-caret-down"></i>
+                                            </span>
+                                            Rincian Produk
+                                        </button>
+                                    </h2>
+                                </div>
+                        
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionSingle">
+                                    <div class="card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                                        moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                        Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                                        proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                                        aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header border-0 pr-0 pl-0" id="headingTwo" style="background-color: #ffffff;">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed border-0 text-decoration-none position-relative" type="button" data-toggle="collapse"
+                                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            <span class="position-absolute mr-3" style="right: 0px;">
+                                                <i class="fas fa-caret-up"></i>
+                                            </span>
+                                            <span class="position-absolute mr-3 d-none" style="right: 0px;">
+                                                <i class="fas fa-caret-down"></i>
+                                            </span>
+                                            Detail Ukuran
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSingle">
+                                    <div class="card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                                        moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                        Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                                        proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                                        aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header border-0 pr-0 pl-0" id="headingThree" style="background-color: #ffffff;">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed border-0 text-decoration-none position-relative" type="button" data-toggle="collapse"
+                                            data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            <span class="position-absolute mr-3" style="right: 0px;">
+                                                <i class="fas fa-caret-up"></i>
+                                            </span>
+                                            <span class="position-absolute mr-3 d-none" style="right: 0px;">
+                                                <i class="fas fa-caret-down"></i>
+                                            </span>
+                                            Kebijakan Pengembalian
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSingle">
+                                    <div class="card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                                        moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                        Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                                        proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                                        aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end here -->
+        </div>
+    </div>
+    <!-- end here -->
+
+    <!-- rekomendasi -->
+    <div class="container product-items">
+        <div class="row m-0" id="product-items-title">
+            <div class="col-12 p-0 border-bottom">
+                <p class="m-0 text-center p-2">
+                    PRODUK SERUPA
+                </p>
+            </div>
+        </div>
+
+        <div class="row m-0 flex-row flex-nowrap flex-lg-wrap m-0 horizontal-scroll horizontal-scroll-lg justify-content-lg-center pt-3 pb-3">
+            <div class="col-5 col-md-3 col-lg-2 p-0 p-1">
+                <a href="single.html" class="text-decoration-none">
+                    <div class="card border-0 position-relative">
+                        <!-- tag new -->
+                        <span class="position-absolute new-tag">NEW</span>
+                        <!-- end here -->
+                        <img src="assets/img/promo1.jpg" class="img-fluid" alt="Brand 1">
+                        <div class="card-body p-1">
+                            <div class="product-info">
+                                <p class="brand-name m-0 font-italic">UNIQLO</p>
+                                <p class="product-name m-0">Lorem Ipsum</p>
+                            </div>
+
+                            <div class="product-detail mt-2 text-right">
+                                <p class="m-0 default1">IDR 250.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-5 col-md-3 col-lg-2 p-0 p-1">
+                <a href="single.html" class="text-decoration-none">
+                    <div class="card border-0 position-relative">
+                        <img src="assets/img/promo2.jpg" class="img-fluid" alt="Brand 2">
+                        <!-- tag new -->
+                        <span class="position-absolute new-tag">NEW</span>
+                        <!-- end here -->
+                        <div class="card-body p-1">
+                            <div class="product-info">
+                                <p class="brand-name m-0 font-italic">UNIQLO</p>
+                                <p class="product-name m-0">Lorem Ipsum</p>
+                            </div>
+
+                            <div class="product-detail mt-2 text-right">
+                                <p class="m-0 promo">IDR 250.000</p>
+                                <!-- discont tag -->
+                                <p class="m-0 d-inline discont-tag rounded-pill">20%</p>
+                                <!-- end here -->
+                                <p class="m-0 d-inline default">IDR 180.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-5 col-md-3 col-lg-2 p-0 p-1">
+                <a href="single.html" class="text-decoration-none">
+                    <div class="card border-0 position-relative">
+                        <img src="assets/img/promo3.jpg" class="img-fluid" alt="Brand 3">
+                        <div class="card-body p-1">
+                            <div class="product-info">
+                                <p class="brand-name m-0 font-italic">UNIQLO</p>
+                                <p class="product-name m-0">Lorem Ipsum</p>
+                            </div>
+
+                            <div class="product-detail mt-2 text-right">
+                                <p class="m-0 promo">IDR 250.000</p>
+                                <!-- discont tag -->
+                                <p class="m-0 d-inline discont-tag rounded-pill">20%</p>
+                                <!-- end here -->
+                                <p class="m-0 d-inline default">IDR 180.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-5 col-md-3 col-lg-2 p-0 p-1">
+                <a href="single.html" class="text-decoration-none">
+                    <div class="card border-0 position-relative">
+                        <img src="assets/img/promo4.jpg" class="img-fluid" alt="Brand 4">
+                        <div class="card-body p-1">
+                            <div class="product-info">
+                                <p class="brand-name m-0 font-italic">UNIQLO</p>
+                                <p class="product-name m-0">Lorem Ipsum</p>
+                            </div>
+
+                            <div class="product-detail mt-2 text-right">
+                                <p class="m-0 default1">IDR 250.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- end here -->
+
+    <!-- footer -->
+    <div id="footer" class="pt-3 pb-3">
+        <div id="footer-content-1" class="container">
+            <div class="row m-0">
+                <div class="col-12 col-md-4">
+                    <p class="m-0 footer-title">Contact Us</p>
+
+                    <div class="footer-body mt-2">
+                        <p class="m-0 mt-1">WA +6285012345678</p>
+                        <p class="m-0 mt-1">Semarang</p>
+                        <p class="m-0 mt-1">09.00 - 17.00</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 mt-5 mt-md-0">
+                    <p class="m-0 footer-title">Nata Store</p>
+
+                    <div class="footer-body mt-2 d-flex flex-column">
+                        <a href="#" class="text-decoration-none mt-2">About Us</a>
+                        <a href="#" class="text-decoration-none mt-2">Cara Belanja</a>
+                        <a href="#" class="text-decoration-none mt-2">Syarat & Ketentuan</a>
+                        <a href="#" class="text-decoration-none mt-2">Kebijakan Privasi</a>
+                        <a href="#" class="text-decoration-none mt-2">Developer</a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 mt-5 mt-md-0">
+                    <p class="m-0 footer-title">Follow Us</p>
+
+                    <div class="footer-body mt-2">
+                        <a href="#" class="text-decoration-none mr-3">
+                            <i class="fab fa-facebook-square fa-2x"></i>
+                        </a>
+
+                        <a href="#" class="text-decoration-none mr-3">
+                            <i class="fab fa-twitter fa-2x"></i>
+                        </a>
+
+                        <a href="#" class="text-decoration-none mr-3">
+                            <i class="fab fa-instagram-square fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 text-center mt-5">
+                    <p class="m-0" id="footer-copyright">All Rights Reserved By <span>NataDesain</span> Copyright 2020
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of footer -->
+
+    <!-- modal box -->
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <!-- async content here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+
+    <!-- awesome font -->
+    <script type="text/javascript" src="js/all.js"></script>
+
+    <!-- animate -->
+    <script src="js/jquery.easing.1.3.js"></script>
+
+    <!-- Image Hover Zoomin -->
+    <script src='js/jquery.min.js'></script>
+    <script src='js/jquery.zoom.js'></script>
+
+    <!-- costume js -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

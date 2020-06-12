@@ -1,0 +1,1332 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- font family  -->
+    <link href="https://fonts.googleapis.com/css?family=Lora:700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- awesome font -->
+    <link href="css/all.css" rel="stylesheet">
+
+    <!-- costume css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Nata Store</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="position-fixed" id="top-navbar">
+        <div id="navbar-header" class="d-flex align-items-center justify-content-center">
+            <a href="#" class="ml-3 mr-3">
+                <i class="fab fa-facebook-f text-white fa-sm"></i>
+            </a>
+            <a href="#" class="ml-3 mr-3">
+                <i class="fab fa-twitter text-white fa-sm"></i>
+            </a>
+            <a href="#" class="ml-3 mr-3">
+                <i class="fab fa-instagram text-white fa-sm"></i>
+            </a>
+        </div>
+
+        <!-- mobile navbar -->
+        <div class="position-relative hidden-lg" style="background-color: #ffffff;">
+            <div class="container">
+                <div class="row m-0 align-items-center" id="navbar-mobile">
+                    <!-- menu -->
+                    <div class="col-4 p-0" id="menu-navbar">
+                        <i class="fas fa-bars fa-sm text-secondary"></i>
+                    </div>
+
+                    <!-- navbar menu -->
+                    <div class="position-fixed" id="layer-content-navbar"></div>
+                    <div class="tab-content position-fixed" id="navbar-mobile-content">
+                        <div id="account-user">
+                            <div id="account-user-header" class="bg-light d-flex align-items-center pr-3 pl-3">
+                                <!-- show this if user is not login -->
+                                <p class="m-0">ACCOUNT</p>
+
+                                <!-- show this if user is login -->
+                                <p class="m-0 d-none">Kristianus Dianata</p>
+                            </div>
+
+                            <div id="account-user-body">
+                                <div class="row m-0">
+                                    <!-- show this if user login -->
+                                    <a href="#"
+                                        class="list-group-item list-group-item-action col-6 p-0 d-flex align-items-center justify-content-center border pr-2 pl-2">
+                                        WHISTLIST
+                                        <!-- hidden this badge if no whistlist -->
+                                        <span class="badge badge-danger badge-pill ml-2"
+                                            style="font-size: 100%;">14</span>
+                                    </a>
+
+                                    <!-- show this if user login -->
+                                    <a href="#"
+                                        class="col-6 p-0 border d-flex align-items-center justify-content-center pr-2 pl-2">
+                                        HISTORI TRANSAKSI
+                                    </a>
+
+                                    <!-- show this if user not login -->
+                                    <a href="#"
+                                        class="col-6 p-0 border d-flex align-items-center justify-content-center pr-2 pl-2">
+                                        LOGIN
+                                    </a>
+
+                                    <!-- show this if user not login -->
+                                    <a href="#"
+                                        class="col-6 p-0 border d-flex align-items-center justify-content-center pr-2 pl-2">
+                                        REGISTER
+                                    </a>
+
+                                    <!-- show this if user login -->
+                                    <a href="#"
+                                        class="col-6 p-0 border d-flex align-items-center justify-content-center pr-2 pl-2">
+                                        LOGOUT
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="shop-navbar">
+                            <div id="shop-navbar-header" class="d-flex align-items-center pr-3 pl-3">
+                                <p class="m-0 text-white">SHOP</p>
+                            </div>
+
+                            <div id="shop-navbar-body">
+                                <div class="row m-0">
+                                    <div class="col-12 p-0">
+                                        <div class="row m-0 border-bottom border-dark">
+                                            <a
+                                                class="col-12 p-0 border d-flex align-items-center pr-3 pl-3 position-relative category-dropdown">
+                                                BRAND
+
+                                                <span class="position-absolute mr-3 text-secondary" style="right: 0px;">
+                                                    <i class="fas fa-plus"></i>
+                                                </span>
+
+                                                <span class="position-absolute mr-3 text-secondary d-none"
+                                                    style="right: 0px;">
+                                                    <i class="fas fa-minus"></i>
+                                                </span>
+                                            </a>
+
+                                            <div class="col-12 p-0 category-list-mobile">
+                                                <div class="row m-0">
+                                                    <!-- show max 10 list -->
+                                                    <a href="brand.html"
+                                                        class="col-12 pr-4 pl-4 d-flex align-items-center text-decoration-none"
+                                                        style="background-color: #ffffff; min-height: 40px;">
+                                                        SEMUA BRANDS
+                                                    </a>
+
+                                                    <a href="brand_sale.html"
+                                                        class="col-12 pr-4 pl-4 d-flex align-items-center text-decoration-none"
+                                                        style="background-color: #ffffff; min-height: 40px;">
+                                                        UNIQLO
+                                                    </a>
+
+                                                    <a href="brand_sale.html"
+                                                        class="col-12 pr-4 pl-4 d-flex align-items-center text-decoration-none"
+                                                        style="background-color: #ffffff; min-height: 40px;">
+                                                        NIKE
+                                                    </a>
+
+                                                    <a href="brand_sale.html"
+                                                        class="col-12 pr-4 pl-4 d-flex align-items-center text-decoration-none"
+                                                        style="background-color: #ffffff; min-height: 40px;">
+                                                        PULL&BEAR
+                                                    </a>
+
+                                                    <a href="brand_sale.html"
+                                                        class="col-12 pr-4 pl-4 d-flex align-items-center text-decoration-none"
+                                                        style="background-color: #ffffff; min-height: 40px;">
+                                                        CHANEL
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row m-0 border-bottom border-dark">
+                                            <a
+                                                class="col-12 p-0 border d-flex align-items-center pr-3 pl-3 position-relative category-dropdown">
+                                                PAKAIAN
+
+                                                <span class="position-absolute mr-3 text-secondary" style="right: 0px;">
+                                                    <i class="fas fa-plus"></i>
+                                                </span>
+
+                                                <span class="position-absolute mr-3 text-secondary d-none"
+                                                    style="right: 0px;">
+                                                    <i class="fas fa-minus"></i>
+                                                </span>
+                                            </a>
+
+                                            <div class="col-12 p-0 category-list-mobile">
+                                                <div class="row m-0">
+                                                    <a href="category_sale.html"
+                                                        class="col-12 pr-4 pl-4 d-flex align-items-center text-decoration-none"
+                                                        style="background-color: #ffffff; min-height: 40px;">
+                                                        SEMUA PAKAIAN
+                                                    </a>
+
+                                                    <a href="#"
+                                                        class="col-12 pr-4 pl-4 d-flex align-items-center text-decoration-none"
+                                                        style="background-color: #ffffff; min-height: 40px;">
+                                                        KAOS
+                                                    </a>
+
+                                                    <a href="#"
+                                                        class="col-12 pr-4 pl-4 d-flex align-items-center text-decoration-none"
+                                                        style="background-color: #ffffff; min-height: 40px;">
+                                                        KEMEJA
+                                                    </a>
+
+                                                    <a href="#"
+                                                        class="col-12 pr-4 pl-4 d-flex align-items-center text-decoration-none"
+                                                        style="background-color: #ffffff; min-height: 40px;">
+                                                        BLOUSE
+                                                    </a>
+
+                                                    <a href="#"
+                                                        class="col-12 pr-4 pl-4 d-flex align-items-center text-decoration-none"
+                                                        style="background-color: #ffffff; min-height: 40px;">
+                                                        POLO SHIRT
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row m-0 border-bottom border-dark">
+                                            <a
+                                                class="col-12 p-0 border d-flex align-items-center pr-3 pl-3 position-relative category-dropdown">
+                                                CELANA
+
+                                                <span class="position-absolute mr-3 text-secondary" style="right: 0px;">
+                                                    <i class="fas fa-plus"></i>
+                                                </span>
+
+                                                <span class="position-absolute mr-3 text-secondary d-none"
+                                                    style="right: 0px;">
+                                                    <i class="fas fa-minus"></i>
+                                                </span>
+                                            </a>
+
+                                            <div class="col-12 p-0 category-list-mobile">
+                                                <div class="row m-0">
+                                                    <a href="category_sale.html"
+                                                        class="col-12 pr-4 pl-4 d-flex align-items-center text-decoration-none"
+                                                        style="background-color: #ffffff; min-height: 40px;">
+                                                        SEMUA CELANA
+                                                    </a>
+
+                                                    <a href="#"
+                                                        class="col-12 pr-4 pl-4 d-flex align-items-center text-decoration-none"
+                                                        style="background-color: #ffffff; min-height: 40px;">
+                                                        CELANA JEANS
+                                                    </a>
+
+                                                    <a href="#"
+                                                        class="col-12 pr-4 pl-4 d-flex align-items-center text-decoration-none"
+                                                        style="background-color: #ffffff; min-height: 40px;">
+                                                        CELANA PANJANG
+                                                    </a>
+
+                                                    <a href="#"
+                                                        class="col-12 pr-4 pl-4 d-flex align-items-center text-decoration-none"
+                                                        style="background-color: #ffffff; min-height: 40px;">
+                                                        CELANA PENDEK
+                                                    </a>
+
+                                                    <a href="#"
+                                                        class="col-12 pr-4 pl-4 d-flex align-items-center text-decoration-none"
+                                                        style="background-color: #ffffff; min-height: 40px;">
+                                                        ROK
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row m-0 border-bottom border-dark">
+                                            <a
+                                                class="col-12 p-0 border d-flex align-items-center pr-3 pl-3 position-relative category-dropdown">
+                                                JAKET
+
+                                                <span class="position-absolute mr-3 text-secondary" style="right: 0px;">
+                                                    <i class="fas fa-plus"></i>
+                                                </span>
+
+                                                <span class="position-absolute mr-3 text-secondary d-none"
+                                                    style="right: 0px;">
+                                                    <i class="fas fa-minus"></i>
+                                                </span>
+                                            </a>
+
+                                            <div class="col-12 p-0 category-list-mobile">
+                                                <div class="row m-0">
+                                                    <a href="category_sale.html"
+                                                        class="col-12 pr-4 pl-4 d-flex align-items-center text-decoration-none"
+                                                        style="background-color: #ffffff; min-height: 40px;">
+                                                        SEMUA JAKET
+                                                    </a>
+
+                                                    <a href="#"
+                                                        class="col-12 pr-4 pl-4 d-flex align-items-center text-decoration-none"
+                                                        style="background-color: #ffffff; min-height: 40px;">
+                                                        JAS
+                                                    </a>
+
+                                                    <a href="#"
+                                                        class="col-12 pr-4 pl-4 d-flex align-items-center text-decoration-none"
+                                                        style="background-color: #ffffff; min-height: 40px;">
+                                                        SWEATER
+                                                    </a>
+
+                                                    <a href="#"
+                                                        class="col-12 pr-4 pl-4 d-flex align-items-center text-decoration-none"
+                                                        style="background-color: #ffffff; min-height: 40px;">
+                                                        JAKET KULIT
+                                                    </a>
+
+                                                    <a href="#"
+                                                        class="col-12 pr-4 pl-4 d-flex align-items-center text-decoration-none"
+                                                        style="background-color: #ffffff; min-height: 40px;">
+                                                        JAKET JEANS
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row m-0 border-bottom">
+                                            <a href="sale.html"
+                                                class="col-12 border d-flex align-items-center pr-3 pl-3 text-decoration-none text-danger"
+                                                style="background-color: #ffffff;">
+                                                SALE
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="menu-mobile">
+                            <div id="menu-mobile-header" class="d-flex align-items-center pr-3 pl-3">
+                                <p class="m-0  text-white">MENU</p>
+                            </div>
+
+                            <div id="menu-mobile-body">
+                                <div class="row m-0">
+                                    <a href="#"
+                                        class="col-12 p-0 border d-flex align-items-center pr-3 pl-3 text-decoration-none"
+                                        style="background-color: #ffffff;">
+                                        BLOG
+                                    </a>
+
+                                    <a href="#"
+                                        class="col-12 p-0 border d-flex align-items-center pr-3 pl-3 text-decoration-none"
+                                        style="background-color: #ffffff;">
+                                        CARA BELANJA
+                                    </a>
+
+                                    <a href="#"
+                                        class="col-12 p-0 border d-flex align-items-center pr-3 pl-3 text-decoration-none"
+                                        style="background-color: #ffffff;">
+                                        CONTACT US
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- watermark -->
+                    <a href="index.html" class="watermark col-4 text-center p-0 m-0 text-decoration-none">
+                        NATA STORE
+                    </a>
+
+                    <!-- extra menu -->
+                    <div class="col-4 p-0">
+                        <div class="row m-0 justify-content-end">
+                            <div class="col-3 col-md-2 p-0 text-right" id="search-menu">
+                                <i class="fas fa-search fa-sm text-secondary"></i>
+                            </div>
+                            <a class="col-3 col-md-2 p-0 text-right position-relative" id="cart-menu">
+                                <i class="fas fa-shopping-cart fa-sm text-secondary"></i>
+                                <span class="rounded-circle position-absolute"></span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- search field -->
+                    <div class="col-12 position-absolute" id="search-field-navbar">
+                        <div class="row justify-content-center align-items-center h-100">
+                            <div class="col-9 p-0">
+                                <div class="input-group input-group-sm">
+                                    <div class="input-group-prepend mr-2">
+                                        <i class="fas fa-search fa-lg text-secondary h-100 pl-2"></i>
+                                    </div>
+                                    <input type="text"
+                                        class="form-control border-secondary border-bottom border-top-0 border-right-0 border-left-0"
+                                        aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"
+                                        placeholder="Search Product Here . . .">
+                                </div>
+                            </div>
+                            <a class="col-1 p-0 text-right p-0" id="close-search">
+                                <i class="fas fa-times fa-lg text-secondary"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- desktop navbar -->
+        <div class="position-relative hidden-xs hidden-md" style="background-color: #ffffff;">
+            <div class="container">
+                <div id="nav-content-1">
+                    <div class="row m-0 pl-3 pr-3 pt-4 pb-4">
+                        <div class="col-lg-3 text-center m-auto">
+                            <a href="index.html" class="watermark col-4 text-center p-0 m-0 text-decoration-none">
+                                NATA STORE
+                            </a>
+                        </div>
+
+                        <div class="col-lg-6 border rounded border-secondary">
+                            <div class="input-group" id="field-search-navbar">
+                                <input type="text" class="form-control border-0 text-secondary"
+                                    placeholder="Search Product Here . . .">
+                                <i class="fas fa-search align-self-center text-secondary"></i>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 text-center m-auto" id="menu-navbar-desktop">
+                            <!-- show this if user not login -->
+                            <a href="#" class="text-decoration-none pr-3 text-secondary" id="link-login">LOGIN</a>
+
+                            <!-- show this if user is login -->
+                            <div class="dropdown d-inline pr-3 hidden-lg" id="user-menu-nav">
+                                <button class="btn btn-secondary dropdown-toggle text-secondary border-0" type="button"
+                                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <!-- show max 10 char with UPPER CHAR-->
+                                    USER
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item text-secondary" href="#">
+                                        WHISTLIST
+                                        <!-- show this if whistlist > 0 -->
+                                        <span class="badge badge-danger ml-3"
+                                            style="font-size: 9px; font-weight: 500;">4</span>
+                                    </a>
+                                    <a class="dropdown-item text-secondary" href="#">HISTORY TRANSAKSI</a>
+                                    <a class="dropdown-item text-secondary" href="#">LOGOUT</a>
+                                </div>
+                            </div>
+
+                            <a href="#" class="text-right position-relative" id="cart-menu">
+                                <i class="fas fa-shopping-cart fa-sm text-secondary"></i>
+                                <span class="rounded-circle position-absolute"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="nav-content-2">
+                    <ul class="mb-0 pb-2 pr-3 pl-3 pt-0 text-center position-relative border-bottom border-secondary">
+                        <li class="d-inline">
+                            <a href="newarrival_sale.html" class="text-decoration-none p-2">NEW ARRIVALS</a>
+                        </li>
+                        <li class="d-inline">
+                            <a href="brand.html" class="text-decoration-none p-2"
+                                data-target="#brand-sub-nav" id="brand-nav">BRANDS</a>
+                            <div class="position-absolute sub-nav" id="brand-sub-nav">
+                                <ul class="mb-0 p-2 text-center">
+                                    <li class="d-inline p-2">
+                                        <a href="brand.html" class="text-decoration-none">ALL BRANDS</a>
+                                    </li>
+                                    <li class="d-inline p-2">
+                                        <a href="brand_sale.html" class="text-decoration-none">UNIQLO</a>
+                                    </li>
+                                    <li class="d-inline p-2">
+                                        <a href="brand_sale.html" class="text-decoration-none">NIKE</a>
+                                    </li>
+                                    <li class="d-inline p-2">
+                                        <a href="brand_sale.html" class="text-decoration-none">PULL&BEAR</a>
+                                    </li>
+                                    <li class="d-inline p-2">
+                                        <a href="brand_sale.html" class="text-decoration-none">CHANEL</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="d-inline">
+                            <a href="category_sale.html" class="text-decoration-none p-2"
+                                data-target="#pakaian-sub-nav" id="pakaian-nav">PAKAIAN</a>
+                            <div class="position-absolute sub-nav" id="pakaian-sub-nav">
+                                <ul class="mb-0 p-2 text-center">
+                                    <li class="d-inline p-2">
+                                        <a href="category_sale.html" class="text-decoration-none">ALL PAKAIAN</a>
+                                    </li>
+                                    <li class="d-inline p-2">
+                                        <a href="category_sale.html" class="text-decoration-none">KAOS</a>
+                                    </li>
+                                    <li class="d-inline p-2">
+                                        <a href="category_sale.html" class="text-decoration-none">KEMEJA</a>
+                                    </li>
+                                    <li class="d-inline p-2">
+                                        <a href="category_sale.html" class="text-decoration-none">BLOUSE</a>
+                                    </li>
+                                    <li class="d-inline p-2">
+                                        <a href="category_sale.html" class="text-decoration-none">POLO SHIRT</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="d-inline">
+                            <a href="category_sale.html" class="text-decoration-none p-2"
+                                data-target="#celana-sub-nav" id="celana-nav">CELANA</a>
+                            <div class="position-absolute sub-nav" id="celana-sub-nav">
+                                <ul class="mb-0 p-2 text-center">
+                                    <li class="d-inline p-2">
+                                        <a href="category_sale.html" class="text-decoration-none">ALL CELANA</a>
+                                    </li>
+                                    <li class="d-inline p-2">
+                                        <a href="category_sale.html" class="text-decoration-none">CELANA JEANS</a>
+                                    </li>
+                                    <li class="d-inline p-2">
+                                        <a href="category_sale.html" class="text-decoration-none">CELANA PANJANG</a>
+                                    </li>
+                                    <li class="d-inline p-2">
+                                        <a href="category_sale.html" class="text-decoration-none">CELANA PENDEK</a>
+                                    </li>
+                                    <li class="d-inline p-2">
+                                        <a href="category_sale.html" class="text-decoration-none">ROK</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="d-inline">
+                            <a href="category_sale.html" class="text-decoration-none p-2"
+                                data-target="#jaket-sub-nav" id="jaket-nav">JAKET</a>
+                            <div class="position-absolute sub-nav" id="jaket-sub-nav">
+                                <ul class="mb-0 p-2 text-center">
+                                    <li class="d-inline p-2">
+                                        <a href="category_sale.html" class="text-decoration-none">ALL JAKET</a>
+                                    </li>
+                                    <li class="d-inline p-2">
+                                        <a href="category_sale.html" class="text-decoration-none">JAS</a>
+                                    </li>
+                                    <li class="d-inline p-2">
+                                        <a href="category_sale.html" class="text-decoration-none">SWEATER</a>
+                                    </li>
+                                    <li class="d-inline p-2">
+                                        <a href="category_sale.html" class="text-decoration-none">JAKET KULIT</a>
+                                    </li>
+                                    <li class="d-inline p-2">
+                                        <a href="category_sale.html" class="text-decoration-none">JAKET JEANS</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="d-inline">
+                            <a href="#" class="text-decoration-none  p-2 text-danger">SALE</a>
+                        </li>
+                        <li class="d-inline">
+                            <a href="#" class="text-decoration-none p-2">BLOG</a>
+                        </li>
+                        <li class="d-inline">
+                            <a href="#" class="text-decoration-none p-2">CARA BELANJA</a>
+                        </li>
+                        <li class="d-inline">
+                            <a href="#" class="text-decoration-none p-2">CONTACT US</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end here -->
+
+    <!-- content -->
+    <div class="container" id="sale-content">
+        <!-- content sale header-->
+        <div class="row m-0 border-bottom pb-2" id="sale-content-header">
+            <!-- page name -->
+            <div class="col-12 p-0 sale-content-title">
+                <!-- Active brand -->
+                <p class="m-0 text-center">NEW ARRIVALS</p>
+            </div>
+
+            <!-- total items show -->
+            <div class="col-12 p-0 sale-content-title">
+                <p class="m-0 text-center font-italic">7 Items Found</p>
+            </div>
+
+            <!-- filter menu -->
+            <div class="col-12 pt-2 hidden-md hidden-lg">
+                <div class="row m-0">
+                    <div class="col-6 p-0 text-center" id="cta-filter-menu">
+                        <span class="sale-content-filter" id="show-filter-menu">
+                            <i class="fas fa-filter fa-sm text-secondary mr-1"></i>
+                            FILTER
+                        </span>
+                    </div>
+
+                    <div class="col-6 p-0 text-center">
+                        <span class="sale-content-filter" id="cta-sort-menu">
+                            <i class="fas fa-sort fa-lg text-secondary mr-1"></i>
+                            URUTKAN
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- filter menu mobile-->
+        <div class="position-fixed hidden-md" id="filter-menu">
+            <div class="row m-0 align-items-center" id="filter-title">
+                <div class="col-12 position-relative">
+                    <div class="row m-0 justify-content-center">
+                        <div class="col-8 p-0">
+                            <p class="m-0 text-center font-italic">FILTER</p>
+                            <p class="m-0 text-center font-italic">7 Items Found</p>
+                        </div>
+
+                        <div class="col-2 p-0 text-right">
+                            <span id="close-filter-menu">
+                                <i class="fas fa-times fa-lg text-secondary"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row m-0 pt-2" id="filter-body">
+                <div class="col-4 p-0">
+                    <div class="list-group rounded-0" id="list-tab" role="tablist">
+                        <a class="list-group-item list-group-item-action border-0 active" id="list-category-list"
+                            data-toggle="list" href="#list-category" role="tab" aria-controls="home">NEW ARRIVALS</a>
+                        <a class="list-group-item list-group-item-action border-0" id="list-brand-list"
+                            data-toggle="list" href="#list-brand" role="tab" aria-controls="home">BRANDS</a>
+                        <a class="list-group-item list-group-item-action border-0" id="list-size-list"
+                            data-toggle="list" href="#list-size" role="tab" aria-controls="messages">SIZE</a>
+                        <a class="list-group-item list-group-item-action border-0" id="list-harga-list"
+                            data-toggle="list" href="#list-harga" role="tab" aria-controls="settings">HARGA</a>
+                    </div>
+                </div>
+
+                <div class="col-8 p-2 content-filter">
+                    <div class="tab-content p-2" id="nav-tabContent">
+                        <!-- show all category by active brand -->
+                        <div class="tab-pane fade show active" id="list-category" role="tabpanel"
+                            aria-labelledby="list-category-list">
+                            <div class="row m-0 filter-link">
+                                <div class="form-check border-bottom col-12 p-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="category-1">
+                                    <label class="form-check-label" for="category-1">
+                                        KAOS
+                                    </label>
+                                </div>
+
+                                <div class="form-check border-bottom col-12 p-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="category-2">
+                                    <label class="form-check-label" for="category-2">
+                                        KEMEJA
+                                    </label>
+                                </div>
+
+                                <div class="form-check border-bottom col-12 p-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="category-3">
+                                    <label class="form-check-label" for="category-3">
+                                        BLOUSE
+                                    </label>
+                                </div>
+
+                                <div class="form-check border-bottom col-12 p-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="category-4">
+                                    <label class="form-check-label" for="category-4">
+                                        POLO SHIRT
+                                    </label>
+                                </div>
+
+                                <div class="form-check border-bottom col-12 p-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="category-5">
+                                    <label class="form-check-label" for="category-5">
+                                        CELANA JEANS
+                                    </label>
+                                </div>
+
+                                <div class="form-check border-bottom col-12 p-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="category-6">
+                                    <label class="form-check-label" for="category-6">
+                                        CELANA PANJANG
+                                    </label>
+                                </div>
+
+                                <div class="form-check border-bottom col-12 p-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="category-7">
+                                    <label class="form-check-label" for="category-7">
+                                        CELANA PENDEK
+                                    </label>
+                                </div>
+
+                                <div class="form-check border-bottom col-12 p-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="category-8">
+                                    <label class="form-check-label" for="category-8">
+                                        ROK
+                                    </label>
+                                </div>
+
+                                <div class="form-check border-bottom col-12 p-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="category-9">
+                                    <label class="form-check-label" for="category-9">
+                                        JAS
+                                    </label>
+                                </div>
+
+                                <div class="form-check border-bottom col-12 p-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="category-10">
+                                    <label class="form-check-label" for="category-10">
+                                        SWEATER
+                                    </label>
+                                </div>
+
+                                <div class="form-check border-bottom col-12 p-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="category-11">
+                                    <label class="form-check-label" for="category-11">
+                                        JAKET KULIT
+                                    </label>
+                                </div>
+
+                                <div class="form-check border-bottom col-12 p-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="category-12">
+                                    <label class="form-check-label" for="category-12">
+                                        JAKET JEANS
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="list-brand" role="tabpanel" aria-labelledby="list-brand-list">
+                            <div class="row m-0 filter-link">
+                                <div class="form-check border-bottom col-12 p-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="brand-1">
+                                    <label class="form-check-label" for="brand-1">
+                                        UNIQLO
+                                    </label>
+                                </div>
+
+                                <div class="form-check border-bottom col-12 p-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="brand-2">
+                                    <label class="form-check-label" for="brand-2">
+                                        NIKE
+                                    </label>
+                                </div>
+
+                                <div class="form-check border-bottom col-12 p-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="brand-3">
+                                    <label class="form-check-label" for="brand-3">
+                                        PULL&BEAR
+                                    </label>
+                                </div>
+
+                                <div class="form-check border-bottom col-12 p-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="brand-4">
+                                    <label class="form-check-label" for="brand-4">
+                                        CHANEL
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="list-size" role="tabpanel" aria-labelledby="list-size-list">
+                            <div class="row m-0 filter-link">
+                                <div class="form-check border-bottom col-12 p-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="size-1">
+                                    <label class="form-check-label" for="size-1">
+                                        XXL
+                                    </label>
+                                </div>
+
+                                <div class="form-check border-bottom col-12 p-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="size-2">
+                                    <label class="form-check-label" for="size-2">
+                                        XL
+                                    </label>
+                                </div>
+
+                                <div class="form-check border-bottom col-12 p-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="size-3">
+                                    <label class="form-check-label" for="size-3">
+                                        L
+                                    </label>
+                                </div>
+
+                                <div class="form-check border-bottom col-12 p-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="size-4">
+                                    <label class="form-check-label" for="size-4">
+                                        M
+                                    </label>
+                                </div>
+
+                                <div class="form-check border-bottom col-12 p-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="size-5">
+                                    <label class="form-check-label" for="size-5">
+                                        S
+                                    </label>
+                                </div>
+
+                                <div class="form-check border-bottom col-12 p-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="size-6">
+                                    <label class="form-check-label" for="size-6">
+                                        28
+                                    </label>
+                                </div>
+
+                                <div class="form-check border-bottom col-12 p-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="size-7">
+                                    <label class="form-check-label" for="size-7">
+                                        30
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="list-harga" role="tabpanel" aria-labelledby="list-harga-list">
+                            <div class="row m-0 filter-link">
+                                <div class="form-check border-bottom col-12 p-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        Dibawah 100.000
+                                    </label>
+                                </div>
+
+                                <div class="form-check border-bottom col-12 p-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                    <label class="form-check-label" for="defaultCheck2">
+                                        100.000 - 250.000
+                                    </label>
+                                </div>
+
+                                <div class="form-check border-bottom col-12 p-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                                    <label class="form-check-label" for="defaultCheck3">
+                                        250.000 - 500.000
+                                    </label>
+                                </div>
+
+                                <div class="form-check border-bottom col-12 p-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+                                    <label class="form-check-label" for="defaultCheck4">
+                                        500.000 - 750.000
+                                    </label>
+                                </div>
+
+                                <div class="form-check border-bottom col-12 p-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+                                    <label class="form-check-label" for="defaultCheck5">
+                                        750.000 - 1.000.000
+                                    </label>
+                                </div>
+
+                                <div class="form-check border-bottom col-12 p-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck6">
+                                    <label class="form-check-label" for="defaultCheck6">
+                                        Diatas 1.000.000
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row m-0 align-items-center" id="cta-filter">
+                <div class="col-12 text-center">
+                    <a href="#" class="text-decoration-none rounded">
+                        FILTER
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- content sale body -->
+        <div class="row m-0">
+            <div class="col-md-4 col-lg-3 mt-3 mb-3 p-0 hidden-xs">
+                <div class="row m-0 p-2" id="filter-menu-md">
+                    <div class="col-md-12">
+                        <div class="row m-0 border-bottom border-secondary">
+                            <div class="col-md-12 p-2">
+                                <p class="header-filter m-0">
+                                    CATEGORY
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row m-0 body-filter">
+                            <div class="col-12-md p-2">
+                                <div class="form-check pt-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                    <label class="form-check-label" for="defaultCheck2">
+                                        KAOS
+                                    </label>
+                                </div>
+                                <div class="form-check pt-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                                    <label class="form-check-label" for="defaultCheck3">
+                                        KEMEJA
+                                    </label>
+                                </div>
+                                <div class="form-check pt-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+                                    <label class="form-check-label" for="defaultCheck4">
+                                        BLOUSE
+                                    </label>
+                                </div>
+                                <div class="form-check pt-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+                                    <label class="form-check-label" for="defaultCheck5">
+                                        POLO SHIRT
+                                    </label>
+                                </div>
+                                <div class="form-check pt-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck6">
+                                    <label class="form-check-label" for="defaultCheck6">
+                                        CELANA JEANS
+                                    </label>
+                                </div>
+                                <div class="form-check pt-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck21">
+                                    <label class="form-check-label" for="defaultCheck21">
+                                        CELANA PANJANG
+                                    </label>
+                                </div>
+                                <div class="form-check pt-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck22">
+                                    <label class="form-check-label" for="defaultCheck22">
+                                        CELANA PENDEK
+                                    </label>
+                                </div>
+                                <div class="form-check pt-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck23">
+                                    <label class="form-check-label" for="defaultCheck23">
+                                        ROK
+                                    </label>
+                                </div>
+                                <div class="form-check pt-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck24">
+                                    <label class="form-check-label" for="defaultCheck24">
+                                        JAS
+                                    </label>
+                                </div>
+                                <div class="form-check pt-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck25">
+                                    <label class="form-check-label" for="defaultCheck25">
+                                        SWEATER
+                                    </label>
+                                </div>
+                                <div class="form-check pt-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck26">
+                                    <label class="form-check-label" for="defaultCheck26">
+                                        JAKET KULIT
+                                    </label>
+                                </div>
+                                <div class="form-check pt-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck27">
+                                    <label class="form-check-label" for="defaultCheck27">
+                                        JAKET JEANS
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="row m-0 border-bottom border-secondary">
+                            <div class="col-md-12 p-2">
+                                <p class="header-filter m-0">
+                                    BRANDS
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row m-0 body-filter">
+                            <div class="col-12-md p-2">
+                                <div class="form-check pt-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck29">
+                                    <label class="form-check-label" for="defaultCheck29">
+                                        UNIQLO
+                                    </label>
+                                </div>
+                                <div class="form-check pt-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck30">
+                                    <label class="form-check-label" for="defaultCheck30">
+                                        NIKE
+                                    </label>
+                                </div>
+                                <div class="form-check pt-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck31">
+                                    <label class="form-check-label" for="defaultCheck31">
+                                        PULL&BEAR
+                                    </label>
+                                </div>
+                                <div class="form-check pt-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck32">
+                                    <label class="form-check-label" for="defaultCheck32">
+                                        CHANEL
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="row m-0 border-bottom border-secondary">
+                            <div class="col-md-12 p-2">
+                                <p class="header-filter m-0">
+                                    SIZE
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row m-0 body-filter">
+                            <div class="col-12-md p-2">
+                                <div class="form-check pt-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck8">
+                                    <label class="form-check-label" for="defaultCheck8">
+                                        XXL
+                                    </label>
+                                </div>
+                                <div class="form-check pt-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck9">
+                                    <label class="form-check-label" for="defaultCheck9">
+                                        XL
+                                    </label>
+                                </div>
+                                <div class="form-check pt-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck10">
+                                    <label class="form-check-label" for="defaultCheck10">
+                                        L
+                                    </label>
+                                </div>
+                                <div class="form-check pt-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck11">
+                                    <label class="form-check-label" for="defaultCheck11">
+                                        M
+                                    </label>
+                                </div>
+                                <div class="form-check pt-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck12">
+                                    <label class="form-check-label" for="defaultCheck12">
+                                        S
+                                    </label>
+                                </div>
+                                <div class="form-check pt-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck13">
+                                    <label class="form-check-label" for="defaultCheck13">
+                                        28
+                                    </label>
+                                </div>
+                                <div class="form-check pt-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck14">
+                                    <label class="form-check-label" for="defaultCheck14">
+                                        30
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="row m-0 border-bottom border-secondary">
+                            <div class="col-md-12 p-2">
+                                <p class="header-filter m-0">
+                                    HARGA
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row m-0 body-filter">
+                            <div class="col-12-md p-2">
+                                <div class="form-check pt-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck15">
+                                    <label class="form-check-label" for="defaultCheck15">
+                                        Dibawah 100.000
+                                    </label>
+                                </div>
+                                <div class="form-check pt-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck16">
+                                    <label class="form-check-label" for="defaultCheck16">
+                                        100.000 - 250.000
+                                    </label>
+                                </div>
+                                <div class="form-check pt-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck17">
+                                    <label class="form-check-label" for="defaultCheck17">
+                                        250.000 - 500.000
+                                    </label>
+                                </div>
+                                <div class="form-check pt-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck18">
+                                    <label class="form-check-label" for="defaultCheck18">
+                                        500.000 - 750.000
+                                    </label>
+                                </div>
+                                <div class="form-check pt-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck19">
+                                    <label class="form-check-label" for="defaultCheck19">
+                                        750.000 - 1.000.000
+                                    </label>
+                                </div>
+                                <div class="form-check pt-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck20">
+                                    <label class="form-check-label" for="defaultCheck20">
+                                        Diatas 1.000.000
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-8 col-lg-9 p-0">
+                <div class="row m-0 header-product-items hidden-xs">
+                    <div class="col-md-12 p-md-3">
+                        <div class="row m-0 align-items-center">
+                            <div class="col-md-6 text-left page-info">
+                                <p class="m-0">PAGE 1 OF 6</p>
+                            </div>
+
+                            <div class="col-md-6 p-0 text-right sort-menu">
+                                <div class="row m-0 justify-content-end">
+                                    <div class="col-md-12 col-lg-8 p-0">
+                                        <div class="input-group pl-4 pr-4">
+                                            <select class="custom-select border-0" id="inputGroupSelect01">
+                                                <option selected>Urutkan</option>
+                                                <option value="1">Nama</option>
+                                                <option value="2">Harga</option>
+                                                <option value="3">Brand</option>
+                                                <option value="4">Terbaru</option>
+                                                <option value="5">Diskon</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row m-0 product-items pt-3 pb-3 pt-md-0 pl-md-3 pr-md-3">
+                    <div class="col-6 col-lg-4 p-0 p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card border-0 position-relative">
+                                <!-- tag new -->
+                                <span class="position-absolute new-tag">NEW</span>
+                                <!-- end here -->
+                                <img src="assets/img/promo1.jpg" class="img-fluid" alt="Brand 1">
+                                <div class="card-body p-1">
+                                    <div class="product-info">
+                                        <p class="brand-name m-0 font-italic">UNIQLO</p>
+                                        <p class="product-name m-0">Lorem Ipsum</p>
+                                    </div>
+
+                                    <div class="product-detail mt-2 text-right">
+                                        <p class="m-0 default1">IDR 250.000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-6 col-lg-4 p-0 p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card border-0 position-relative">
+                                <!-- tag new -->
+                                <span class="position-absolute new-tag">NEW</span>
+                                <!-- end here -->
+                                <img src="assets/img/promo2.jpg" class="img-fluid" alt="Brand 2">
+                                <div class="card-body p-1">
+                                    <div class="product-info">
+                                        <p class="brand-name m-0 font-italic">UNIQLO</p>
+                                        <p class="product-name m-0">Lorem Ipsum</p>
+                                    </div>
+
+                                    <div class="product-detail mt-2 text-right">
+                                        <p class="m-0 promo">IDR 250.000</p>
+                                        <!-- discont tag -->
+                                        <p class="m-0 d-inline discont-tag rounded-pill">20%</p>
+                                        <!-- end here -->
+                                        <p class="m-0 d-inline default">IDR 180.000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-6 col-lg-4 p-0 p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card border-0 position-relative">
+                                <img src="assets/img/promo3.jpg" class="img-fluid" alt="Brand 3">
+                                <div class="card-body p-1">
+                                    <div class="product-info">
+                                        <p class="brand-name m-0 font-italic">UNIQLO</p>
+                                        <p class="product-name m-0">Lorem Ipsum</p>
+                                    </div>
+
+                                    <div class="product-detail mt-2 text-right">
+                                        <p class="m-0 promo">IDR 250.000</p>
+                                        <!-- discont tag -->
+                                        <p class="m-0 d-inline discont-tag rounded-pill">20%</p>
+                                        <!-- end here -->
+                                        <p class="m-0 d-inline default">IDR 180.000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-6 col-lg-4 p-0 p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card border-0 position-relative">
+                                <img src="assets/img/promo4.jpg" class="img-fluid" alt="Brand 4">
+                                <div class="card-body p-1">
+                                    <div class="product-info">
+                                        <p class="brand-name m-0 font-italic">UNIQLO</p>
+                                        <p class="product-name m-0">Lorem Ipsum</p>
+                                    </div>
+
+                                    <div class="product-detail mt-2 text-right">
+                                        <p class="m-0 default1">IDR 250.000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- paging -->
+                <div class="row m-0">
+                    <div class="col-12 p-0">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center pt-3">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                                        <i class="fas fa-angle-left"></i>
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">1</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">
+                                        <i class="fas fa-angle-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end here -->
+
+    <!-- footer -->
+    <div id="footer" class="pt-3 pb-3">
+        <div id="footer-content-1" class="container">
+            <div class="row m-0">
+                <div class="col-12 col-md-4">
+                    <p class="m-0 footer-title">Contact Us</p>
+
+                    <div class="footer-body mt-2">
+                        <p class="m-0 mt-1">WA +6285012345678</p>
+                        <p class="m-0 mt-1">Semarang</p>
+                        <p class="m-0 mt-1">09.00 - 17.00</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 mt-5 mt-md-0">
+                    <p class="m-0 footer-title">Nata Store</p>
+
+                    <div class="footer-body mt-2 d-flex flex-column">
+                        <a href="#" class="text-decoration-none mt-2">About Us</a>
+                        <a href="#" class="text-decoration-none mt-2">Cara Belanja</a>
+                        <a href="#" class="text-decoration-none mt-2">Syarat & Ketentuan</a>
+                        <a href="#" class="text-decoration-none mt-2">Kebijakan Privasi</a>
+                        <a href="#" class="text-decoration-none mt-2">Developer</a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 mt-5 mt-md-0">
+                    <p class="m-0 footer-title">Follow Us</p>
+
+                    <div class="footer-body mt-2">
+                        <a href="#" class="text-decoration-none mr-3">
+                            <i class="fab fa-facebook-square fa-2x"></i>
+                        </a>
+
+                        <a href="#" class="text-decoration-none mr-3">
+                            <i class="fab fa-twitter fa-2x"></i>
+                        </a>
+
+                        <a href="#" class="text-decoration-none mr-3">
+                            <i class="fab fa-instagram-square fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 text-center mt-5">
+                    <p class="m-0" id="footer-copyright">All Rights Reserved By <span>NataDesain</span> Copyright 2020
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of footer -->
+
+    <!-- modal box -->
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <!-- async content here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+
+    <!-- awesome font -->
+    <script type="text/javascript" src="js/all.js"></script>
+
+    <!-- animate -->
+    <script src="js/jquery.easing.1.3.js"></script>
+
+    <!-- Image Hover Zoomin -->
+    <script src='js/jquery.min.js'></script>
+    <script src='js/jquery.zoom.js'></script>
+
+    <!-- costume js -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
